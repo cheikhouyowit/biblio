@@ -1,5 +1,0 @@
-<?xmlversion="1.0"?> 
-<odoo>
-	<!--Library App Menu -->
-	<menuitemid="menu_library" name="Library" />
-</odoo> 
