@@ -2,7 +2,8 @@ from odoo import fields, models
 
 class Book(models.Model): 
 	
-	_name= 'library.book’_description = 'Book’ 
+	_name= 'library.book'
+        _description = 'Book' 
 	name= fields.Char('Title', required=True) 
 	isbn= fields.Char('ISBN') 
 	active = fields.Boolean('Active?', default=True) 
