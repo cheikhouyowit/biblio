@@ -12,15 +12,13 @@ class Book(models.Model):
 	
 	def _check_isbn(self):
 		self.ensure_one()
-		for x in self:
-			if int(x).isdigit():
-				digits = self.isbn 
-				if len(digits)==13:
-					ponderators = [1, 3] * 6
-					total = sum(a * b for a,b in zip(digits[:12],ponderators))
-					remain = total % 10
-					check = 10 - remain if remain != 0 else 0
-					return digits[-1] == check
+		digits = [int(x) for x in self.isbn if x.isdigit()]
+		if len(digits)==13:
+				ponderators = [1, 3] * 6
+				total = sum(a * b for a,b in zip(digits[:12],ponderators))
+				remain = total % 10
+				check = 10 - remain if remain != 0 else 0
+				return digits[-1] == check
 			
 	
 	def button_check_isbn(self):
