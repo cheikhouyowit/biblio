@@ -9,7 +9,7 @@ class Book(models.Model):
 
 			
  
-	@api.multi
+	
 	def _check_isbn(self):
 		self.ensure_one()
 		for x in self:
@@ -22,7 +22,7 @@ class Book(models.Model):
 					check = 10 - remain if remain != 0 else 0
 					return digits[-1] == check
 			
-	@api.multi
+	
 	def button_check_isbn(self):
 		for book in self:
 			if not book.isbn:
