@@ -18,8 +18,8 @@ class Book(models.Model):
 				if len(digits)==13:
 					ponderators = [1, 3] * 6
 					total = sum(a * b for a,b in zip(digits[:12],ponderators))
-            		remain = total % 10
-            		check = 10 - remain if remain != 0 else 0
+					remain = total % 10
+					check = 10 - remain if remain != 0 else 0
 					return digits[-1] == check
 			
 	@api.multi
