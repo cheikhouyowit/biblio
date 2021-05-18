@@ -8,17 +8,7 @@ class Book(models.Model):
 	_description = "Book"
 
  
-# 	@api.multi
-##		self.ensure_one()
-#        digits = [int(x) for x in self.isbn if x.isdigit()]
-#		
-#        if len(digits) == 13:
-#			ponderations = [1, 3] * 6
-#			terms = [a * b for a, b in zip(digits[:12], ponderations)]
-#			remain = sum(terms) % 10
-#			check = 10 - remain if remain != 0 else 0
-#			return digits[-1] == check
-#			 """
+
 	@api.multi
    	def button_check_isbn(self):
 		   for book in self:
