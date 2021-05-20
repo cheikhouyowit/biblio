@@ -5,7 +5,7 @@
     'data': [
         'views/book_view.xml',
         
-        'security/library_security.xml',
+        'security/member_security.xml',
         'security/ir.model.access.csv',
         
     ],
