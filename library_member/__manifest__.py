@@ -9,6 +9,6 @@
         'security/ir.model.access.csv',
         
     ],
-    'depends': ['biblio'],
+    'depends': ['biblio','base'],
     'application': False,
 }
