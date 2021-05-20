@@ -4,8 +4,7 @@
     'author': 'Daniel Reis',
     'data': [
         'views/book_view.xml',
-        'views/member_view.xml',
-        'views/menu_member.xml',
+        
         'security/library_security.xml',
         'security/ir.model.access.csv',
         

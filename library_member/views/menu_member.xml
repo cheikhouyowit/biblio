@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-   <odoo>
+<odoo>
        <act_window id="action_library_member"
          name="Library Members"
          res_model="library.member"
