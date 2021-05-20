@@ -4,8 +4,10 @@
     'author': 'Daniel Reis',
     'data': [
         'views/book_view.xml',
-        
-        
+        'views/menu_member.xml',
+        'views/member_view.xml',
+        'security/member_security.xml',
+        'security/ir.model.access.csv',
         
     ],
     'depends': ['biblio','base'],
