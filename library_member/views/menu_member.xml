@@ -1,6 +1,4 @@
-
-
- <?xml version="1.0"?>
+<?xml version="1.0"?>
    <odoo>
        <act_window id="action_library_member"
          name="Library Members"
