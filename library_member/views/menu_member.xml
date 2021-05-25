@@ -7,5 +7,5 @@
        <menuitem id="menu_library_member" 
        name="Members"
        action="action_library_member"
-       parent="biblio.menu_library" />
+       parent="biblio.menu_library" sequence="30" />
 </odoo>
