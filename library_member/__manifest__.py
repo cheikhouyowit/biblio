@@ -10,6 +10,6 @@
         'security/ir.model.access.csv',
         
     ],
-    'depends': ['biblio','base'],
+    'depends': ['biblio','base','mail'],
     'application': False,
 }
