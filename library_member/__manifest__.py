@@ -7,7 +7,7 @@
         'views/menu_member.xml',
         'views/member_view.xml',
         'security/member_security.xml',
-        'security/ir.model.access.csv',
+       # 'security/ir.model.access.csv',
         
     ],
     'depends': ['biblio','base'],
